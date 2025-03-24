@@ -1,0 +1,80 @@
+/* Define color scheme variables */
+:root {
+    --primary-color: #3498db;  /* Blue */
+    --secondary-color: #2ecc71; /* Green */
+    --accent-color: #e74c3c;   /* Red */
+    --background-color: #f4f4f4; /* Light Gray */
+    --text-color: #333333; /* Dark Gray */
+  }
+  
+  /* Limit the page width for better design */
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--background-color);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style headings */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  
+  /* Style paragraph */
+  p {
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  /* Remove underlines only from social media image links */
+  .social-media a {
+    text-decoration: none;
+  }
+  
+  /* Style the Hero Container */
+  .hero {
+    position: relative;  /* Establish positioning context */
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  /* Style the hero image */
+  .hero img {
+    width: 100%;  /* Make image responsive */
+    display: block; /* Prevent unwanted spacing */
+  }
+  
+  /* Position h1 and article absolutely */
+  .hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Style and position article */
+  .hero article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  /* Float article image to the right */
+  .hero article img {
+    float: right;
+    margin-left: 15px;
+    width: 50%;
+    border-radius: 8px;
+    max-width: 200px; /* Limit size */
+  }
+  
